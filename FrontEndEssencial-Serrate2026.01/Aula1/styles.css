@@ -1,0 +1,39 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+.sobremim {
+  align-content: center;
+  justify-content: center;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(93, 118, 139);
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #1a252f;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  border-radius: 200px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
