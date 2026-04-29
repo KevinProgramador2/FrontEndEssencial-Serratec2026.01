@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(135deg, #2c105c, #523a88, #4a3a63, #482292);
+  background-size: 500% 100%;
+}
+
+header {
+  background: linear-gradient(135deg, #b2b2b2, #523a88, #4a3a63, #b2b2b2);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+a {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 20px;
+}
+
+ol {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  color: #2c105c;
+  transform: scale3d(1.1);
+}
+
+.apresentacao {
+  border-radius: 30px;
+  justify-self: center;
+  align-content: center;
+}
+
+.apresentacao > h1,
+h2 {
+  color: aliceblue;
+}
+
+main > .linguagens {
+  justify-content: center;
+}
+
+.linguagens img {
+  justify-content: space-between;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.linguagens img:hover {
+  scale: 1.1;
+}
