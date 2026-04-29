@@ -1,0 +1,102 @@
+body {
+  background:
+    linear-gradient(rgba(80, 30, 173, 0.8), rgba(53, 26, 117, 0.8)),
+    url("https://img.freepik.com/vetores-gratis/fundo-de-tecnologia-com-rede-hexagonal_79603-303.jpg?semt=ais_hybrid&w=740&q=80");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(82, 37, 119);
+  text-align: center;
+}
+
+a {
+  margin: 0.5rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(236, 24, 24);
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: rgb(5, 5, 5);
+  transform: scale(1.1);
+}
+
+img {
+  z-index: 1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.galeria-imagens > img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  color: #adadad;
+  display: flex;
+  gap: 1rem;
+  background: rgb(49, 21, 128);
+  padding: 1rem;
+}
+
+.formulario {
+  width: 19rem;
+  padding: 1rem;
+  background-color: #351a75;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-class {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-class:hover {
+  transform: scale(1.1);
+}
+
+label {
+  margin: 2px;
+  color: blueviolet;
+  text-transform: capitalize;
+}
+
+input {
+  margin: 2px;
+  padding: 0.3rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
