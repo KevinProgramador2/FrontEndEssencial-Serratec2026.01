@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(145deg, #2c2b2b, #1679bb);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding-top: 120px;
+
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(145deg, #2c2b2b, #1679bb);
+}
+
+.header-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  background: linear-gradient(145deg, #1679bb38, #afafaf00);
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #1df7ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+main {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inicio {
+  color: aqua;
+  background: linear-gradient(
+    45deg,
+    #fdfdfd,
+    #61878b,
+    #02eeff,
+    #dfdce0,
+    #229cbd
+  );
+
+  background-size: 400% 400%;
+
+  background-clip: text;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 1.875rem;
+
+  animation: gradientMove 4.4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.fotoLinguagens {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  background: linear-gradient(145deg, #a09b9b, #1679bb);
+  width: 400px;
+  height: 350px;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.projetos h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.imgProjetos {
+  display: flex;
+  justify-content: center;
+}
+
+.pProjeto {
+  display: flex;
+  justify-content: start;
+  margin: 2px;
+}
