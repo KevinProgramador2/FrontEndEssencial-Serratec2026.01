@@ -28,3 +28,43 @@ const carro = {
         console.log("bibi")
     }
 }
+
+
+let alunos = [
+    {
+        nome: "João",
+        nota: 8.5,
+        bolsista: false
+    },
+    {
+        nome: "Ana",
+        nota: 7.5,
+        bolsista: false
+    },
+    {
+        nome: "Beto",
+        nota: 9.0,
+        bolsista: false
+    },
+    {
+        nome: "Carla",
+        nota: 6.5,
+        bolsista: true
+    }
+]
+
+
+// Map (Criar um novo array de nomes)
+const nomes = alunos.map(aluno => aluno.nome.toUpperCase())
+console.log("Nomes: ", nomes)
+
+// Filter (Cria um novo array apenas com quem passou)
+const aprovados = alunos.filter(aluno => aluno.nota >= 7)
+console.log("Aprovados: ", aprovados)
+
+// Reduce (Reduzir os valores do array em um único valor)
+const soma = alunos.reduce((acc, atual) => acc + atual.nota, 0)
+const media = soma / alunos.length
+console.log("Média: ", media)
+
+
