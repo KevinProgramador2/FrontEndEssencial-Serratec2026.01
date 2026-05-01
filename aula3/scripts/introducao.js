@@ -68,3 +68,52 @@ const media = soma / alunos.length
 console.log("Média: ", media)
 
 
+// -----------------------------------------------
+
+// Find (Busca de um objeto por um atributo)
+const aluno = alunos.find(aluno => aluno.nome === "Ana")
+console.log("Aluno encontrado: ", aluno)
+
+// FindIndex (Retorna o indice do objeto que satisfaz aquela condição)
+const IndexAluno = alunos.findIndex(aluno => aluno.nome === "Ana")
+console.log("Aluno encontrado em : ", IndexAluno)
+
+// Every (Verifica se todos os elementos satisfazem a condição (se sim retorna true))
+const todosAprovados = alunos.every(aluno => aluno.nota >= 7)
+console.log("Todos aprovados?", todosAprovados)
+
+// Some (Veirifica se pelo menos um elemento satisfaz a condição (se sim retorna true))
+const temBolsista = alunos.some(aluno => aluno.bolsista)
+console.log("Tem bolsista? ", temBolsista)
+
+// -------------------------------------------------
+// Alteração (mutabilidade do array)
+
+const letras = ['b', 'c']
+
+letras.push('d') // Adiciona um elemento ao final do array
+letras.unshift('a') // Adiciona um elemento ao ínicio do array
+letras.pop() // remove um elemento do final do array
+letras.shift() // remove um elemento do início do array
+
+console.log(letras)
+
+// ---------------------------------------------------
+// Ordenação 
+
+const numeros = [10, 1, 5, 20]
+
+numeros.sort((a, b) => a - b) // Ordenar nosso array em ordem crescente
+console.log("Array ordenado: ", numeros)
+
+numeros.reverse() // Inverte a ordem do nosso array
+console.log("Array inverso: ", numeros)
+
+const data = [30, 4, 2026]
+const stringResultante = data.join("/") // Converter o nosso array para string separando os valores pelo caractere informado
+console.log("Data: ", stringResultante)
+
+// Corta o array sem alterar o original
+console.log("Os dois primeiros alunos: ", alunos.slice(0, 2))
+console.log("Alunos: ", alunos)
+

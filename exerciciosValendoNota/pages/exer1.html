@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>exercicio 01</title>
+    <title>Artemis</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-    <main class="conteudo-principal">
-        <section class="secao">
-            <h2>Formulario</h2>
-            <p>Preencha seus dados comforme abaixo</p>
-        </section>
+    <main class="container">
+        <header class="cabecalho">
+            <h1>Junte-se a Missão Artemis</h1>
+            <p>Preencha seus dados para a próxima expedição</p>
+        </header>
         <form class="formulario-inscricao">
             <div class="grupo-input">
-                <label for="nome">Nome Completo</label>
-                <input type="text" nome="nome" id="nome" placeholder="Nome completo" required>
-                <label for="senha">Digite sua senha</label>
-                <input type="password" name="senha" id="senha">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Marcos Pontes">
             </div>
-        </form>
-    </main>
+            <div class="grupo-input">
+                <label for="email">Email de Contato:</label>
+                <input type="email" id="email" placeholder="Email de contato">
+            </div>
+            <div class="grupo-input">
+                <label for="especialidade">Especialidade (Engenharia, Pilotagem...):</label>
+                <select name="especialidade" id="especialidade">
+                    <option value="piloto"> Piloto de Módulo Lunar </option>
+                    <option value="engenheiro"> Engenheiro(a) Aeroespacial </option>
+                    <option value="dados"> Cientista de Dados </option>
+                </select>
+            </div>
 
+            <button type="submit" class="btn-enviar">Solicitar Vaga na Nave</button>
+        </form>
+
+    </main>
 </body>
 
 </html>
