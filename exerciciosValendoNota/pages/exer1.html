@@ -1,35 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artemis</title>
+
+    <meta name="description" content="Formulário de inscrição para a missão Artemis">
+    <meta name="author" content="Kevin Rezende">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Inscrição Missão Artemis</title>
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
     <main class="container">
+
         <header class="cabecalho">
-            <h1>Junte-se a Missão Artemis</h1>
+            <h1>Junte-se à Missão Artemis</h1>
             <p>Preencha seus dados para a próxima expedição</p>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Missão</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </header>
+
+        <section class="info-missao">
+            <dl>
+                <dt>Missão</dt>
+                <dd>Exploração lunar com tecnologia avançada</dd>
+
+                <dt>Duração</dt>
+                <dd>6 meses</dd>
+
+                <dt>Destino</dt>
+                <dd>Lua</dd>
+            </dl>
+        </section>
+
         <form class="formulario-inscricao">
             <div class="grupo-input">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Ex: Marcos Pontes">
             </div>
+
             <div class="grupo-input">
                 <label for="email">Email de Contato:</label>
-                <input type="email" id="email" placeholder="Email de contato">
+                <input type="email" id="email" name="email" placeholder="Email de contato">
             </div>
+
             <div class="grupo-input">
-                <label for="especialidade">Especialidade (Engenharia, Pilotagem...):</label>
+                <label for="especialidade">Especialidade:</label>
                 <select name="especialidade" id="especialidade">
-                    <option value="piloto"> Piloto de Módulo Lunar </option>
-                    <option value="engenheiro"> Engenheiro(a) Aeroespacial </option>
-                    <option value="dados"> Cientista de Dados </option>
+                    <option value="piloto">Piloto de Módulo Lunar</option>
+                    <option value="engenheiro">Engenheiro(a) Aeroespacial</option>
+                    <option value="dados">Cientista de Dados</option>
                 </select>
             </div>
 
@@ -37,6 +69,7 @@
         </form>
 
     </main>
+
 </body>
 
 </html>

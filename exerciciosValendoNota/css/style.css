@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: box;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   border-radius: 12px;
   width: 100%;
   max-width: 500px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0, 8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
 .cabecalho h1 {
@@ -29,8 +29,40 @@ body {
 }
 
 .cabecalho p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 15px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #45a29e;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #66fcf1;
+}
+
+/* Lista descritiva */
+.info-missao {
+  margin-bottom: 25px;
+}
+
+.info-missao dt {
+  font-weight: bold;
+  color: #66fcf1;
+}
+
+.info-missao dd {
+  margin-bottom: 10px;
 }
 
 .grupo-input {
